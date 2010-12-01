@@ -1,0 +1,95 @@
+body {
+	background: #25262b;
+}
+
+p {
+	padding: 0;
+	margin: 0;
+}
+
+#iphone-scrollcontainer {
+	width: 799px;
+	height: 500px;
+	margin: 70px auto;
+	background: #fff;
+	
+	
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	
+	box-shadow: 2px 2px 2px #000;
+	-webkit-box-shadow: 1px -1px 9px #000;
+}
+
+#iphone-inside {
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+}
+
+#unlock-top {
+	background: url('../images/lock-top.png');
+	position: relative;
+	height: 95px;
+}
+
+.title {font-size: 45px; color: black;}
+.description{font-size: 30px;}
+
+.title, .description{
+	text-align: center;
+	text-shadoow: #000 0 0 100px;
+	-webkit-transition: text-shadow 2s cubic-bezier(0, 1, 0, 1);
+}
+
+.title:hover, .description:hover {
+	text-shadow: #fff 0 0 3px;
+	-webkit-transition:  text-shadow 1s cubic-bezier(0, 0.75, 0, 1);
+}
+
+#unlock-spacer {
+	height: 311px;
+	background: url('../images/wallpaper.png') fixed center no-repeat;
+}
+
+#unlock-bottom {
+	position: relative;
+	background: url('../images/lock-bottom.png') no-repeat;
+	height: 94px;
+}
+
+#slide-to-unlock {
+	position: absolute;
+	z-index: 1;
+	left: 60px;
+	width: 100%;
+	height: 94px;
+	background-image: url('../images/slide-to-unlock.gif');
+}
+
+#unlock-slide-wrapper {
+	padding-left: 22px;
+	padding-top: 23px;
+}
+
+#unlock-slider {
+	width: 757px;
+	height: 50px;
+}
+
+#unlock-handle {
+	position: absolute;
+	z-index: 10;
+	height: 50px;
+	width: 72px;
+	left: 0px;
+	top: 0px;
+	background-image: url('../images/lock-slider.png');
+	
+}
+
+
+
+/* Used by the jQuery slider */
+.ui-slider { position: relative; background-repeat: no-repeat; background-position: center center; }
